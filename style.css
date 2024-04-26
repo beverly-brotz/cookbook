@@ -1,27 +1,20 @@
 * {
+  box-sizing: border-box;
   border: 1px solid red;
 }
 
 html, body {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin:0;
+  height: 100%;
 }
 
 #container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width:1000px;
 }
 
 #recipe-nav {
-  display: flex;
-  justify-content: center;
   gap:20px;
-}
-
-main, #recipe-window, {
-  display:flex;
-  justify-content:center;
 }
 
 #recipe-buttons {
@@ -37,8 +30,10 @@ main, #recipe-window, {
 
 main
 {
+  display:flex;
+  flex-direction: column;
   text-align: center;
-  padding-block: 10px;
+  padding-block: 50px;
   padding-inline:50px;
 }
 
@@ -47,4 +42,9 @@ main
   border: 1px solid green;
   min-width:700px;
   padding: 10px;
+  overflow-y: scroll;
+}
+
+.recipe p, .recipe h1, .recipe img {
+  text-align: center;
 }
