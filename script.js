@@ -1,0 +1,1 @@
+let recipeWindow = document.getElementById("recipe-window")

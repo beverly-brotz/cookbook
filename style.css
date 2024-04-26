@@ -1,0 +1,50 @@
+* {
+  border: 1px solid red;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#recipe-nav {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+
+main, #recipe-window, {
+  display:flex;
+  justify-content:center;
+}
+
+#recipe-buttons {
+  background-image:linear-gradient(to top,
+  black,
+  rgb(195, 0, 255));
+  color: rgba(0, 255, 153, 0.873);
+  font-weight: bolder;
+  border:1px solid greenyellow;
+  width: 10%;
+  min-width:200px;
+}
+
+main
+{
+  text-align: center;
+  padding-block: 10px;
+  padding-inline:50px;
+}
+
+#recipe-window {
+  text-align: left;
+  border: 1px solid green;
+  min-width:700px;
+  padding: 10px;
+}
