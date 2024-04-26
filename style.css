@@ -34,7 +34,8 @@ html, body {
 
 main {
   text-align: center;
-  padding-block: 50px;
+  padding-top: 30px;
+  padding-bottom: 100px;
   padding-inline:50px;
   width:100%;
   height:100%;
