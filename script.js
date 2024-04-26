@@ -5,7 +5,7 @@ let pageTitle = document.getElementById('page-title')
 /* functions for buttons - swaps html on index page to show different recipes*/
 
 function chiliGet() {
-  fetch('/recipes/chili.html').then(function(response) {
+  fetch('https://beverly-brotz.github.io/odin-recipes/recipes/chili.html').then(function(response) {
     return response.text()
   }).then(function(html) {
     var parser = new DOMParser();
@@ -19,7 +19,7 @@ function chiliGet() {
 }
 
 function meatloafGet() {
-  fetch('/recipes/meatloaf.html').then(function(response) {
+  fetch('https://beverly-brotz.github.io/odin-recipes/recipes/meatloaf.html').then(function(response) {
     return response.text()
   }).then(function(html) {
     var parser = new DOMParser();
@@ -32,7 +32,7 @@ function meatloafGet() {
   pageTitle.innerText = "Meatloaf Recipe"
 }
 function stuffedpeppersGet() {
-  fetch('/recipes/stuffedpeppers.html').then(function(response) {
+  fetch('https://beverly-brotz.github.io/odin-recipes/recipes/stuffedpeppers.html').then(function(response) {
     return response.text()
   }).then(function(html) {
     var parser = new DOMParser();
