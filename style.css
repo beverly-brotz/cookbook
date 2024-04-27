@@ -219,3 +219,29 @@ nav#recipe-nav {
   border: solid 2px #00c753;
   border-radius: 10px;
 }
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!
+MEDIA QUERY STARTS HERE
+!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+@media (max-width:900px) {
+ 
+  #container {
+    border-radius:0;
+  }
+
+  body, html, main{
+    padding: 0px;
+  }
+  #recipe-window {
+    min-width:100%;
+  }
+  .recipe-buttons {
+    min-width:0;
+  }
+  nav#recipe-nav {
+    max-width: 100%;
+  }
+
+}
