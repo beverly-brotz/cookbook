@@ -107,8 +107,6 @@ body{
 }
 
 h1 {
-  color:rgb(48, 0, 53);
-  text-shadow:#9ae0fe 1px 0 6px inset;
   font-weight:100;
 }
 
@@ -178,7 +176,9 @@ nav#recipe-nav {
   color:#fc87fc;
 }
 
-.recipe img {
+.recipe img {  
+  max-height:150px;
+  max-width:150px;
   border-radius: .75em;
 }
 
@@ -229,19 +229,32 @@ MEDIA QUERY STARTS HERE
  
   #container {
     border-radius:0;
+    border:none;
+    height:100%;
   }
 
-  body, html, main{
-    padding: 0px;
+  body {
+    padding:0;
   }
+
+  main {
+    padding:10px;
+  }
+
   #recipe-window {
     min-width:100%;
   }
   .recipe-buttons {
     min-width:0;
+    width:33.33333%;
   }
   nav#recipe-nav {
-    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .recipe img {
+    max-height:100px;
+    max-width:100px;
   }
 
 }
